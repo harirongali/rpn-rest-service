@@ -1,0 +1,18 @@
+RPN Evaluator Service
+
+Format to be followed: operands with spaces. ex: 3 1 2 + *
+Supported Operands: + - / * ++ --
+
+Dependency: java 1.8+
+Build and compile:
+mvn clean install
+Run:
+java -jar target/rpn-evalutor-service-0.1.0.jar
+
+Docker commands:
+Build -
+docker build -t rpn .
+Run -
+docker run -it -p 8080:8080 --rm --name rpnapp rpn
+
+
